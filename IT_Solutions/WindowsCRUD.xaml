@@ -1,0 +1,16 @@
+﻿<Window x:Class="IT_Solutions.WindowsCRUD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IT_Solutions"
+        mc:Ignorable="d"
+        Title="Техносервис" Height="450" Width="800">
+    <Grid Background="#FFFDCE4D">
+        <Label Content="Заявки" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="White" FontStyle="Italic" Height="74" Margin="0,5,0,0"/>
+        <DataGrid Loaded="dgOrders_Loaded" Name="dgOrders"  Margin="0,59,0,0" Height="166" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800" SelectionChanged="dgOrders_SelectionChanged"/>
+        <Button Content="Назад" HorizontalAlignment="Right" Margin="0,363,665,0" VerticalAlignment="Top" Height="42" Width="99" Click="Button_Click_1"/>
+        <TextBox ToolTip="Введите номер заявки для поиска"  HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="Поиск по заявке" Name="searchNumber" SelectionChanged="searchNumber_SelectionChanged"  VerticalAlignment="Top" Width="258" Height="28"/>
+
+    </Grid>
+</Window>
